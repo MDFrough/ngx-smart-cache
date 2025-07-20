@@ -1,0 +1,40 @@
+{
+  "name": "@mdfrough/ngx-smart-cache",
+  "version": "0.0.1",
+  "description": "Smart targeted cache layer for Angular HttpClient with TTL and tagging support.",
+  "author": "Mohammad Dursham",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdfrough/ngx-smart-cache"
+  },
+  "keywords": [
+    "angular",
+    "httpclient",
+    "cache",
+    "interceptor",
+    "ttl",
+    "smart-cache",
+    "angular-library"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^20.1.0",
+    "@angular/core": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^20.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2020/mdfrough-ngx-smart-cache.mjs",
+  "es2020": "fesm2020/mdfrough-ngx-smart-cache.mjs",
+  "typings": "mdfrough-ngx-smart-cache.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./mdfrough-ngx-smart-cache.d.ts",
+      "default": "./fesm2020/mdfrough-ngx-smart-cache.mjs"
+    }
+  },
+  "sideEffects": false
+}

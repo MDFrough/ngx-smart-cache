@@ -1,10 +1,10 @@
-# 🔥 ngx-smart-cache
+# 🔥 @mdfrough/ngx-smart-cache
 
 > A lightweight, flexible caching layer for Angular `HttpClient` — with full support for standalone APIs and NgModules.
 
-[![npm version](https://img.shields.io/npm/v/ngx-smart-cache.svg)](https://www.npmjs.com/package/ngx-smart-cache)
+[![npm version](https://img.shields.io/npm/v/@mdfrough/ngx-smart-cache.svg)](https://www.npmjs.com/package/@mdfrough/ngx-smart-cache)
 [![Angular](https://img.shields.io/badge/Angular-15%2B-red)](https://angular.io)
-[![License](https://img.shields.io/npm/l/ngx-smart-cache.svg)](LICENSE)
+[![License](https://img.shields.io/npm/l/@mdfrough/ngx-smart-cache.svg)](LICENSE)
 
 ---
 
@@ -21,7 +21,7 @@
 ## 📦 Installation
 
 ```bash
-npm install ngx-smart-cache
+npm install @mdfrough/ngx-smart-cache
 ```
 
 ---
@@ -34,7 +34,7 @@ npm install ngx-smart-cache
 
 ```ts
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { cacheInterceptor } from 'ngx-smart-cache';
+import { cacheInterceptor } from '@mdfrough/ngx-smart-cache';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -47,7 +47,7 @@ bootstrapApplication(AppComponent, {
 
 ```ts
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { CacheInterceptor } from 'ngx-smart-cache';
+import { CacheInterceptor } from '@mdfrough/ngx-smart-cache';
 
 @NgModule({
   providers: [
@@ -62,7 +62,7 @@ export class AppModule {}
 ## 🧠 Caching Requests with `withCache()`
 
 ```ts
-import { withCache } from 'ngx-smart-cache';
+import { withCache } from '@mdfrough/ngx-smart-cache';
 
 this.http.get('/api/products', {
   context: withCache({
@@ -89,7 +89,7 @@ this.http.get('/api/users', {
 ## 🧹 Invalidate Cache Manually
 
 ```ts
-import { CacheService } from 'ngx-smart-cache';
+import { CacheService } from '@mdfrough/ngx-smart-cache';
 
 constructor(private cacheService: CacheService) {}
 
